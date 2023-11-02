@@ -1,0 +1,72 @@
+@import '../../../config-scss/rem-calc.scss';
+
+$padding: rem-calc(20);
+
+:host {
+    .listagem {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: large;
+
+        .pokemon {
+
+            position: relative;
+            display: flex;
+            margin: 10px;
+
+            width: calc(49% - 20px);
+            height: rem-calc(160);
+            background: whitesmoke;
+            border-radius: rem-calc(10);
+            text-decoration: none;
+            color: var(--primary-color);
+
+            &_status {
+                h2 {
+
+                    font-size: rem-calc(15);
+                    font-style: italic;
+                    font-weight: 700;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        background: lightgrey;
+                        font-size: rem-calc(10);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black;
+                        margin: 3px;
+                        padding: 3px;
+                        border-radius: 5px;
+                        width: rem-calc(60);
+                    }
+                }
+            }
+
+            &_image {
+                width: rem-calc(150);
+                height: rem-calc(115);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: $padding;
+                bottom: $padding;
+                right: $padding ;
+
+                img {
+                    width: rem-calc(80);
+                }
+            }
+        }
+
+
+    }
+
+}

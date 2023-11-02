@@ -1,0 +1,36 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+    mat-form-field {
+        width: 95%;
+        margin-left: 10px;
+        background: #262835;
+
+        input {
+            padding: 15px;
+            width: 90%;
+            padding-left: 10px;
+            background-color: gray;
+            border-radius: 10px;
+            color: white;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        mat-label {
+            padding-left: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    }
+
+
+
+
+
+
+
+}
